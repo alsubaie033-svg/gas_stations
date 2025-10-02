@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "784493758629",
+    "firebase_url": "https://gas-station-99051-default-rtdb.firebaseio.com",
+    "project_id": "gas-station-99051",
+    "storage_bucket": "gas-station-99051.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784493758629:android:70e620834a3b840490254c",
+        "android_client_info": {
+          "package_name": "com.example.gas_stations"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg_4XJUS0N9o4wuqL38SwC78Q7Lfz95qM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784493758629:android:d68a63fc3fec68b090254c",
+        "android_client_info": {
+          "package_name": "com.example.gasstation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAg_4XJUS0N9o4wuqL38SwC78Q7Lfz95qM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
