@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import './controllers/auth_controller.dart';
 import './views/views.dart';
+import 'firebase_options.dart';
 import 'routes/app_route.dart';
 // import 'firebase_service.dart';
 
@@ -12,7 +13,10 @@ import 'routes/app_route.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  WidgetsFlutterBinding.ensureInitialized();
+ await Firebase.initializeApp(
+     options: DefaultFirebaseOptions.currentPlatform,
+   );
+
   await Firebase.initializeApp(); // required for Firebase
 
   // Initialize the AuthController (which listens to auth state changes)

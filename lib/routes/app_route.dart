@@ -1,3 +1,4 @@
+import 'package:gas_stations/views/forget_password_screen.dart';
 import 'package:get/get.dart';
 
 // Controllers
@@ -16,13 +17,8 @@ class Routes {
   static const String main = '/main';
   static const String chat = '/chat';
   static const String welcome = '/welcome';
+  static const String forgotPassword = '/forgotPassword';
 
-  // Optional (if you’re still using them)
-  static const String dashboard = '/dashboard';
-  static const String createRequest = '/create_request';
-  static const String donorMap = '/donor_map';
-  static const String donationHistory = '/donation_history';
-  static const String settings = '/settings';
 
   // --- Route Pages ---
   static final routes = [
@@ -39,6 +35,13 @@ class Routes {
     GetPage(
       name: login,
       page: () => LoginScreen(),
+      binding: BindingsBuilder(() {
+        Get.put(AuthController());
+      }),
+    ),
+    GetPage(
+      name: forgotPassword,
+      page: () => AuthForgetPasswordScreen(),
       binding: BindingsBuilder(() {
         Get.put(AuthController());
       }),

@@ -1,7 +1,8 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
-import '../constants/constants.dart'; // Only used for the placeholder snackbar
+import '../constants/constants.dart';
+import '../routes/app_route.dart'; // Only used for the placeholder snackbar
 
 class WelcomeController extends GetxController {
   // Observable state to potentially handle loading or UI changes (optional for this simple screen)
@@ -12,7 +13,7 @@ class WelcomeController extends GetxController {
   void navigateAsUser() {
     isLoading.value = true;
     // In a real app, you would navigate to the User's home screen
-    // Example: Get.toNamed(Routes.USER_HOME);
+    Get.toNamed(Routes.signup);
 
     // Placeholder notification
     Get.snackbar(
